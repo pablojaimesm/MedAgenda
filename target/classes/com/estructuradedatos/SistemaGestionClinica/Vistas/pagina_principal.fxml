@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="141.0" prefWidth="237.0" spacing="20" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.PaginaPrincipalControlador">
+
+	<MenuBar>
+		<Menu text="Menú">
+			<MenuItem onAction="#navegarRegistrarPacientes" text="Registrar Pacientes" />
+			<MenuItem onAction="#navegarProgramarCitas" text="Programar Citas" />
+			<MenuItem onAction="#navegarListaCitas" text="Lista de Citas" />
+			<MenuItem onAction="#navegarTaquilla" text="Taquilla" />
+			<MenuItem onAction="#navegarLlamadoPacientes" text="Llamado de Pacientes" />
+			<MenuItem onAction="#navegarRegistroOrdenesMedicas" text="Registro de Órdenes Médicas" />
+			<MenuItem onAction="#navegarAutorizacionExamenes" text="Autorización de Exámenes" />
+		</Menu>
+	</MenuBar>
+
+</VBox>

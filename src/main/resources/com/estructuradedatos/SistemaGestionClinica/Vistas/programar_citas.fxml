@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.ProgramarCitasControlador">
+
+    <Label style="-fx-font-size: 20px;" text="Programar Cita Médica" />
+
+    <GridPane alignment="CENTER" hgap="10" vgap="5">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <Label text="Número de Documento:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="documentoPacienteTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label fx:id="nombrePacienteLabel" prefHeight="18.0" prefWidth="478.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label text="Especialidad:" GridPane.rowIndex="2" />
+        <ComboBox fx:id="especialidadComboBox" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Label text="Profesional Asignado:" GridPane.rowIndex="3" />
+        <ComboBox fx:id="profesionalComboBox" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Label text="Motivo de la Cita:" GridPane.rowIndex="4" />
+        <TextArea fx:id="motivoTextArea" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <Label text="Fecha:" GridPane.rowIndex="5" />
+        <DatePicker fx:id="fechaDatePicker" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+        <Label text="Hora:" GridPane.rowIndex="6" />
+        <ComboBox fx:id="horaComboBox" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <!-- Puedes predefinir valores o llenarlos dinámicamente en tu controlador -->
+        </ComboBox>
+
+        <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" onAction="#confirmarCita" text="Confirmar Cita" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      
+      
+    </GridPane>
+</VBox>

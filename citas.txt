@@ -1,0 +1,2 @@
+2, 2024-05-22, 11:00, 2, 1005332107, Especialista Cardiologo, Dolor en el pecho, EC202405221100002, 100,00, Pagado
+4, 2024-05-15, 11:00, 5, 1005332107, Medicina General, Control, MG202405151100004, 50,00, Pagado

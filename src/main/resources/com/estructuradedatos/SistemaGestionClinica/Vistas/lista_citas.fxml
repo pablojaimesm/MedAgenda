@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Controladores.ListaCitasControlador"
+      alignment="CENTER"
+      spacing="10">
+    <Label style="-fx-font-size: 20px;" text="Listar Citas Médicas" />
+
+    <GridPane alignment="CENTER" hgap="10" vgap="5">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+        <TextField fx:id="documentoPacienteTextField" GridPane.rowIndex="0" />
+        <Label fx:id="nombrePacienteLabel" prefHeight="18.0" prefWidth="478.0" GridPane.rowIndex="1" />
+        <ListView fx:id="citasListView" GridPane.rowIndex="2" />
+        <Button onAction="#regresar" text="Regresar" GridPane.rowIndex="4" />
+        <Button contentDisplay="CENTER" onAction="#cancelarCita" text="Cancelar" GridPane.rowIndex="3" />
+      <columnConstraints>
+         <ColumnConstraints maxWidth="524.8" minWidth="455.2000225067138" prefWidth="455.2000225067138" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+</VBox>

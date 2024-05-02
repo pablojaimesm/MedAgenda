@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.RegistroOrdenesMedicasControlador">
+
+	<Label style="-fx-font-size: 20px;" text="Registro de Órdenes Médicas" />
+
+    <GridPane alignment="CENTER" hgap="10" vgap="5">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <Label text="Documento del Paciente:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="documentoPacienteTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label fx:id="nombrePacienteLabel" prefHeight="18.0" prefWidth="478.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+		<Label text="Especialidad:" GridPane.rowIndex="4" />
+        <ComboBox fx:id="especialidadComboBox" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+		
+        <Label text="Tipo de Examen:" GridPane.rowIndex="5" />
+        <ComboBox fx:id="tipoExamenComboBox" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+        <Label text="Costo del Examen:" GridPane.rowIndex="6" />
+        <TextField fx:id="costoExamenTextField" prefHeight="26.0" prefWidth="292.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+        <Label text="Descripción:" GridPane.rowIndex="7" />
+        <TextArea fx:id="descripcionTextArea" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+        <Label text="Estado:" GridPane.rowIndex="8" />
+        <ComboBox fx:id="estadoComboBox" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+		</ComboBox>
+
+		<Button onAction="#registrarOrden" text="Registrar Orden" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+</VBox>

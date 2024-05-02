@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="300" prefWidth="400" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.LlamadoPacientesControlador">
+
+    <center>
+        <VBox alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+           <Label style="-fx-font-size: 20; -fx-font-weight: bold;" text="Próximas citas por especialidad" />
+            <VBox spacing="10" style="-fx-border-color: black; -fx-border-width: 2px; -fx-padding: 10;">
+                <Label style="-fx-font-weight: bold;" text="Especialista Pediatra:" />
+                <Label fx:id="pediatraLabel" />
+                <Button onAction="#avanzarPediatra" text="Siguiente" />
+            </VBox>
+
+            <VBox spacing="10" style="-fx-border-color: black; -fx-border-width: 2px; -fx-padding: 10;">
+                <Label style="-fx-font-weight: bold;" text="Especialista Cardiologo:" />
+                <Label fx:id="cardiologoLabel" />
+                <Button onAction="#avanzarCardiologo" text="Siguiente" />
+            </VBox>
+
+            <VBox spacing="10" style="-fx-border-color: black; -fx-border-width: 2px; -fx-padding: 10;">
+                <Label style="-fx-font-weight: bold;" text="Especialista Dermatologo:" />
+                <Label fx:id="dermatologoLabel" />
+                <Button onAction="#avanzarDermatologo" text="Siguiente" />
+            </VBox>
+
+            <VBox spacing="10" style="-fx-border-color: black; -fx-border-width: 2px; -fx-padding: 10;">
+                <Label style="-fx-font-weight: bold;" text="Medicina General:" />
+                <Label fx:id="medicinaGeneralLabel" />
+                <Button onAction="#avanzarMedicinaGeneral" text="Siguiente" />
+            </VBox>
+         <Button mnemonicParsing="false" onAction="#regresar" text="Atras" />
+        </VBox>
+    </center>
+
+</BorderPane>
